@@ -32,17 +32,6 @@ Metalsmith(__dirname)
       return originalPath.replace("scss", "stylesheets");
     }
   }))
-  .use(
-    watch({
-      paths: {
-        "${source}/**/*": true,
-        "layouts/**/*": "**/*",
-        "app/**/*": true
-      },
-      livereload: false
-    })
-  )
-  .use(serve({}))
   .build(function(err) {
       if (err) {
           console.log(err);
