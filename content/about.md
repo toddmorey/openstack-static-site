@@ -2,6 +2,7 @@
 pageTitle: About
 cmsUserSlug: ""
 date: 2015-11-29T00:00:00.000Z
+extendfile: layouts/page.html
 ---
 
 {% block sponsors %}
