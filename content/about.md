@@ -1,7 +1,7 @@
 ---
 pageTitle: About
 cmsUserSlug: ""
-date: 2015-11-29 
+date: 2015-11-29T00:00:00.000Z
 ---
 
 {% block sponsors %}
@@ -11,7 +11,7 @@ Here is some content. Here is some sponsor information. And here is some *more*.
 - Yet another
 - But a third goes here.
 
-Oh boy here we go. A first CMS edit.
+Oh boy here we go. A first CMS edit. And another.
 
 {% endblock %}
 
