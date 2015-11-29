@@ -12,7 +12,7 @@ Here is some content. Here is some sponsor information. And here is some *more*.
 - Yet another
 - But a third goes here.
 
-Oh boy here we go. A first CMS edit. And another. Boy, I'm editing the crap out of this thing!
+Oh boy here we go. A first CMS edit. And another. Boy, I'm editing the crap out of this thing! I can't wait to see it live!
 
 {% endblock %}
 
