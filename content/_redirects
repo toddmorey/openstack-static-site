@@ -1,0 +1,2 @@
+# Proxy anything that doesn't match a page on this site over to openstack.org
+/*  https://www.openstack.org/:splat  200

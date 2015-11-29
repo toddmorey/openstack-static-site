@@ -8,6 +8,7 @@ var Metalsmith = require('metalsmith'),
     watch = require('metalsmith-watch'),
     sass = require('metalsmith-sass'),
     serve = require('metalsmith-serve'),
+    permalinks = require('metalsmith-permalinks'),    
     extender = require('./modules/metalsmith-extends.js'),
     nunjucks = require('nunjucks');
 
@@ -18,6 +19,9 @@ Metalsmith(__dirname)
   .destination('./build')
   .use(drafts())
   .use(markdown())
+  .use(permalinks({
+    relative: false
+  }))  
   .use(extender())
   .use(inplace('nunjucks'))
   .use(layouts({
@@ -37,12 +41,11 @@ Metalsmith(__dirname)
       paths: {
         "${source}/**/*": true,
         "layouts/**/*": "**/*",
-        "app/**/*": true
       },
       livereload: false
     })
   )
-  .use(serve({}))
+  .use(serve({ port: 8081 }))  
   .build(function(err) {
       if (err) {
           console.log(err);

@@ -4,6 +4,8 @@ profile
 
 node_modules/*
 build/*
+content/admin/*
+.users.yml
 
 # xcode noise
 build/*

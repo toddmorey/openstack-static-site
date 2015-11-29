@@ -5,9 +5,8 @@ var Metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     inplace = require('metalsmith-in-place'),
     layouts = require('metalsmith-layouts'),
-    watch = require('metalsmith-watch'),
     sass = require('metalsmith-sass'),
-    serve = require('metalsmith-serve'),
+    permalinks = require('metalsmith-permalinks'),    
     extender = require('./modules/metalsmith-extends.js'),
     nunjucks = require('nunjucks');
 
@@ -18,6 +17,9 @@ Metalsmith(__dirname)
   .destination('./build')
   .use(drafts())
   .use(markdown())
+  .use(permalinks({
+    relative: false
+  }))  
   .use(extender())
   .use(inplace('nunjucks'))
   .use(layouts({
