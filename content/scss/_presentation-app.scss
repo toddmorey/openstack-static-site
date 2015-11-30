@@ -1,0 +1,234 @@
+/* Presentation App */
+
+.presentation-app-header {
+    border-bottom: 1px solid #CCCCCC;
+
+    h2 {
+        text-align: left;
+        margin: 20px 0px 5px 0px;
+        font-size: 170%;
+    }
+
+    .status {
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+}
+
+.presentation-app-body {
+    padding-top: 20px;
+    background-color: #F6F7F9; 
+}
+
+.presentation-app-login-panel {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #CCCCCC;
+}
+
+.presentation-main-panel {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 30px;
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    h3 {
+        font-size: 100%;
+        text-transform: uppercase;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    .btn {
+        color: white!important;
+    }
+
+}
+
+.form-actions {
+    .btn {
+        color: white;
+    }
+}
+
+#BootstrapMemberLoginForm_LoginForm {
+    .btn {
+        width: 100%;
+    }
+}
+
+.presentation-app-login-panel {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #CCCCCC;
+}
+
+.user-sidebar {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.user-menu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.user-menu li a {
+    display: block;
+    margin: 0px -20px;
+    padding: 10px 20px;
+
+    &:hover, &:active {
+        text-decoration: none;
+    }
+    
+    &.active {
+        background-color: #EDF2F5;
+        border-left: 3px solid #259ADA;
+    }
+
+
+}
+
+
+.user-menu .fa {
+    float: right;
+    padding-top: 1.5%;
+}
+
+.user-photo {
+
+    margin: -20px;
+    margin-bottom: 20px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.main-panel-section {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.panel-note {
+    padding: 0px 10px;
+    border-left: 3px solid #1E99DF;
+    margin: 20px 0px;
+}
+
+.add-presentation-button {
+    width: 100%;
+}
+
+td.item-name {
+    padding-left: 20px!important;
+    .fa {
+        padding-right: 7px;
+        margin-left: -20px;
+    }
+    width: 70%;
+}
+
+td.action {
+    text-align: right;
+}
+
+.presentation-title, .presentation-status {
+    float: left;
+}
+
+.presentation-title {
+    width: 80%;
+}
+
+.presentation-status {
+    width: 20%;
+    color: red;
+}
+
+.presentation-steps {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.presentation-steps .step {
+    width: 50%;
+    float: left;
+    border: 1px solid #CCCCCC;
+    padding: 7px 10px;
+    margin-left:  -1px;
+    text-align: center;
+    
+    &:hover, &:active, &:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+}
+
+.presentation-steps .active {
+    font-weight: bold;
+    background-color: #F6F7F9;
+    border-top: 1px solid #A8A8A8;
+    border-left: 1px solid #A8A8A8;
+}
+
+.presentation-app-body .form-actions {
+    background-color: #F4F5F8;
+    margin: -20px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.form-actions button {
+    background-color: #1763B4;
+}
+
+.user-img {
+    border: 4px solid $lightblue;    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    background-size: 100%;
+}
+
+h3.user-name {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* review presentation */
+.review-presentation h3 {
+    background-color: #F8F9FD;
+    padding: 10px 20px;
+    margin: 0px -20px 20px -20px;
+}
+
+.review-presentation {
+    padding-bottom: 40px;
+}

@@ -1,0 +1,303 @@
+/*Sponsor Page*/
+
+.sponsor-page-wrapper {
+    padding-top: 0;
+    text-align: center;
+}
+
+.sponsor-wrapper {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.sponsor-wrapper h1 {
+    margin: 0;
+}
+
+.sponsor-alert {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sponsor-wrapper h4,
+.sponsor-instructions h4 {
+    margin-top: 30px;
+}
+
+.sponsor-wrapper h5.section-title {
+    margin-top: 60px;
+}
+
+.sponsor-intro {
+    margin: 0;
+    h1 {
+        margin: 30px 0 50px;
+    }
+}
+
+.sponsor-instructions h1 {
+    margin-top: 0;
+}
+.sponsor-group-btn {
+    margin-bottom: 40px;
+    background: $red;
+    color: white;
+    padding: 15px 20px;
+    &.right {
+        border-left: 1px solid $redhover;
+    }
+    &:hover {
+        color: white;
+        background: $redhover;
+    }
+}
+.sponsor-instructions h1 span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.sponsor-wrapper h5.section-title span {
+    font-size: 0.8em;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.sponsor-spots {
+    margin-bottom: 30px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: $darkblue;
+    border-radius: 4px;
+    border: 1px solid $blue;
+    h3 {
+        padding-top: 30px;
+        margin: 0 0 20px;
+        text-transform: capitalize;
+        font-size: 1.4em;
+        font-weight: 300;
+        color: $darkblue;
+        span {
+            font-size: 0.7em;
+        }
+    }
+    &.sold-out {
+        border-color: $red;
+        color: $red;
+    }
+    &.sold-out h3 {
+        color: $red;
+    }
+    &.sold-out .sponsor-cost {
+        background: $red;
+    }
+    &.sold-out .sponsor-count {
+        color: $red;
+        font-weight: 700;
+    }
+}
+
+.sponsor-cost {
+    font-size: 2em;
+    background: $blue;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: white;
+    span {
+        font-size: 0.6em;
+    }
+}
+
+.sponsor-count {
+    font-weight: 600;
+    font-size: 1em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.sponsor-list {
+    text-align: center;
+}
+
+.sponsor-list h1 {
+    margin-top: 0;
+}
+
+.sponsor-list h5.section-title {
+    margin: 40px 0 60px;
+}
+
+.sponsor-logo {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.sponsor-bkgd {
+    margin: 0;
+    height: 300px;
+    &.bottom {
+        margin: 0 0 -80px;
+        /*-80 when sponsor list is removed*/
+    }
+}
+
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+.sponsor-table {
+    background: white;
+    text-align: left;
+    tr.sold-out td {
+        background: #f2dede;
+        color: #DA422F;
+        &:first-child {
+            padding-left: 30px;
+        }
+    }
+}
+
+.sponsor-table tr.sold-out td:first-child:before {
+    position: absolute;
+    font-family: FontAwesome;
+    top: 50%;
+    margin-top: -12px;
+    left: 10px;
+    content: "\f00d";
+    font-size: 1.3em;
+}
+
+.fixed-image {
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed-image.crowd {
+    background-image: url('#{$assetsPath}/sponsors-bkgd.jpg');
+}
+
+.fixed-image.exhibit {
+    background-image: url('#{$assetsPath}/sponsor-bkgd-exhibit.jpg');
+}
+
+.prospectus-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-link {
+    display: block;
+    margin-top: 10px;
+}
+
+#venue-map h1 {
+    margin-top: 0;
+}
+
+.venue-map-link,
+.venue-map-download {
+    text-align: center;
+}
+
+.venue-map-link {
+    a {
+        &:hover {
+            text-decoration: none;
+            img {
+                border-color: $brightblue;
+            }
+        }
+        img {
+            border: 4px solid $lightblue;
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: 600;
+            i {
+                margin: 10px 5px 0 0;
+            }
+        }
+    }
+}
+
+.venue-map-download a p i {
+    margin: 50px 5px 0 0;
+}
+
+#audience {
+    h1 {
+        margin-top: 0;
+    }
+    h5.section-title {
+        text-align: center;
+    }
+}
+    .attendees-region {
+        text-align: center;
+        h4 {
+            margin-bottom: 30px;
+        }
+    }
+    p.audience-intro {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .stats-highlight {
+        text-align: center;
+        margin-bottom: 40px;
+        h3 {
+            margin-right: 20px;
+            display: inline-block;
+            background: #30739C;
+            padding: 30px;
+            border-radius: 4px;
+            color: white;
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                display: block;
+                font-size: 0.6em;
+                font-weight: 400;
+            }
+        }
+    }
+ul.doughnut-legend {
+    list-style: none;
+    margin: 20px 0 40px;
+    padding: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        text-align: center;
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        padding: 2px 8px 2px 28px;
+        font-size: 14px;
+        cursor: default;
+        -webkit-transition: background-color 200ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
+        span {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+/*End Sponsor Page*/

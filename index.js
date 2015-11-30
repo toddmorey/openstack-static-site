@@ -33,7 +33,7 @@ Metalsmith(__dirname)
   .use(sass({
     outputDir: function(originalPath) {
       // this will change scss/some/path to css/some/path
-      return originalPath.replace("scss", "stylesheets");
+      return originalPath.replace("scss", "css");
     }
   }))
   .use(

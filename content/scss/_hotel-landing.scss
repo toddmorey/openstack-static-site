@@ -1,0 +1,105 @@
+/*Hotel Landing Page*/
+.hotel-landing-header  {
+	background: #0F1017;
+	text-align: center;
+	img.summit-hero-logo {
+		margin: 10px auto;
+	}
+}
+.hotel-landing-intro {
+	text-align: center;
+	h1 {
+		margin: 40px 0 30px;
+	}
+	h4 {
+		padding: 20px 0;
+		border-top: 1px solid $lightbluehover;
+		border-bottom: 1px solid $lightbluehover;
+		font-size: 1.1em;
+	}
+	.alert {
+		margin: 30px 0;
+	}
+}
+.hotel-landing-select {
+	font-size: 1.4em;
+	text-align: center;
+	margin: 40px 0 50px;
+}
+.hotel-landing-choice {
+	width: 48.6%;
+	margin: 0 0.5%;
+	background: $lightblue;
+	padding: 20px;
+	border-radius: 4px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	strong {
+		display: block;
+		margin: 5px 0 10px;
+	}
+	&.active:after {
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: $lightblue;
+		border-width: 20px;
+		margin-left: -20px;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+a.hotel-landing-select-btn {
+	display: block;
+	text-align: center;
+	max-width: 200px;
+	background: $blue;
+	color: white;
+	border-radius: 4px;
+	text-transform: uppercase;
+	margin: 20px auto 0;
+	padding: 10px 20px;
+	&:hover {
+		background: $darkblue;
+		text-decoration: none;
+	}
+}
+.inside-block, .outside-block {
+	display: none;
+	width: 100%;
+	margin: 30px 0;
+	padding: 30px;
+	border: 2px solid $lightbluehover;
+	background: $lightblue;
+	&.active {
+		display: block;
+	}
+	hr {
+		border-color: $lightbluehover;
+	}
+	h3 {
+		margin-top: 0;
+	}
+	p.hotel-alert {
+		color: $red;
+	}
+	p.hotel-promo {
+		color: $red;
+		font-size: 1.5em;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+#paymentEmail, #paymentPhone {
+	display: none;
+}
+/*End Hotel Landing Page*/

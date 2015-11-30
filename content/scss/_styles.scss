@@ -1,0 +1,1434 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    
+    margin: 0 auto -300px;
+    right: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: $darkblue;
+}
+
+h1 {
+    color: $darkblue;
+    font-size: 34px;
+    font-weight: 300;
+    margin: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    color: $darkblue;
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+h3 {
+    color: $darkblue;
+}
+
+h5 {
+    color: $red;
+    margin-bottom: 0;
+}
+
+a,
+a:visited {
+    color: $brightblue;
+}
+
+.center {
+    text-align: center;
+}
+
+p.danger {
+    color: red;
+    font-weight: bold;
+}
+
+.bureau-checkbox {
+    margin-left: -20px !important;
+}
+/*Summit Landing*/
+
+body.summit-landing-body {
+    background: #040508;
+}
+
+.summit-landing-wrapper {
+    background: url('#{$assetsPath}/landing-hero-bkgd.jpg') no-repeat left top;
+    min-height: 610px;
+    background-size: cover;
+    position: relative;
+    border-bottom: 1px solid #243440;
+}
+
+.summit-landing-wrapper.tokyo {
+    background: url('#{$assetsPath}/landing-hero-bkgd-v.jpg') no-repeat left center;
+    background-size: cover; 
+}
+
+.summit-hero-wrapper.austin {
+    background: url('#{$assetsPath}/austin/austin-hero1.jpg') no-repeat left center;
+    background-size: cover;
+}
+
+.summit-landing-logo {
+    margin: 145px 0 20px;
+}
+
+.summit-landing-wrapper p {
+    color: $brightblue;
+    font-weight: 300;
+    max-width: 305px;
+}
+
+.countdown {
+    margin: 50px 5px 10px;
+    display: table;
+}
+
+.countdown span {
+    display: table-cell;
+    height: 60px;
+    width: 35px;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid #2a4d67;
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.countdown span:first-child {
+    border-right: 0;
+    margin-right: -4px;
+}
+
+.countdown span:last-child {
+    border-left: 0;
+    margin-left: -4px;
+}
+
+.countdown-text {
+    color: #777;
+    font-size: 1.12em;
+    text-transform: uppercase;
+    margin: 10px 0 30px;
+}
+
+.landing-action {
+    display: block;
+    margin-top: 20px;
+}
+
+a.register-btn-lrg,
+.register-btn-lrg {
+    border-radius: 2px;
+    background: $red;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 12px 30px;
+}
+
+a.register-btn-lrg:hover,
+.register-btn-lrg:hover {
+    background: #A51B1B;
+    color: white;
+}
+
+a.register-btn-lrg:focus,
+.register-btn-lrg:focus {
+    outline: none;
+    color: white;
+}
+
+a.register-btn-lrg.soon,
+.register-btn-lrg.soon {
+    background: transparent;
+    border: 1px solid white;
+    width: auto !important;
+    padding: 5px !important;
+}
+
+a.register-btn-lrg i,
+.register-btn-lrg i {
+    margin-left: 20px;
+}
+
+a.register-btn-lrg:hover,
+.register-btn-lrg:hover {
+    background: $redhover;
+    color: white;
+}
+
+a.register-btn-lrg.soon:hover,
+.register-btn-lrg.soon:hover {
+    background: transparent;
+    color: white;
+    cursor: default;
+}
+
+.summit-landing-bottom {
+    padding-bottom: 80px;
+}
+
+.summit-row {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.summit-row h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+}
+
+.summit-row h3 {
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.summit-row h4 {
+    color: #adadad;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 300;
+    width: 100%;
+}
+
+.summit-row .register-btn-lrg {
+    width: 270px;
+    height: 35px;
+    padding: 0;
+    line-height: 2em;
+}
+
+a.single-summit {
+    height: 225px;
+    padding-top: 53px;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+a.single-summit:hover {
+    text-decoration: none;
+}
+
+a.past-summit::after {
+    background: url('#{$assetsPath}/home/tokyo-square.jpg') no-repeat center center;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+a.current-summit {
+    padding-top: 10px;
+}
+
+a.current-summit::after {
+    background: url('#{$assetsPath}/home/austin-wide.jpg') no-repeat center center;
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+a.current-summit:hover:after {
+    opacity: 1;
+}
+
+a.future-summit::after {
+    background: url('#{$assetsPath}/home/barcelona-square.jpg') no-repeat center center;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+a.past-summit:hover:after,
+a.future-summit:hover:after {
+    opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+    a.single-summit::after {
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+    }
+    .small-single-summit {
+        width: 50%;
+        margin-top: 30px;
+        float: left;
+    }
+    .small-single-summit a.single-summit {
+        width: 100%;
+        max-height: 150px;
+        padding-top: 20px;
+    }
+    .small-single-summit a.single-summit::after {
+        background-size: 100%;
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%;
+    }
+}
+
+.single-summit-date {
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #666;
+    position: relative;
+}
+
+.single-summit-date.current {
+    color: $red;
+}
+
+.single-summit-date.future {
+    color: $brightblue;
+}
+
+.date-circle {
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    left: 50%;
+    margin-left: -10px;
+    margin-bottom: 50px;
+    background-color: #040508;
+    border: 2px solid #666;
+    height: 20px;
+    width: 20px;
+    border-radius: 75px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+}
+
+.single-summit-date.current .date-circle {
+    border-color: $red;
+}
+
+@media (max-width: 767px) {
+    .single-summit-date.current {
+        margin-bottom: 30px;
+    }
+    .single-summit-date.current .date-circle {
+        display: none;
+    }
+}
+
+.single-summit-date.future .date-circle {
+    border-color: $brightblue;
+}
+
+.summit-landing-bottom hr {
+    border-color: #243440;
+    z-index: 1;
+    margin-top: 28px;
+}
+/*End Summit Landing*/
+/*Summit Inner Layout*/
+
+.summit-hero-wrapper {
+    background: url('#{$assetsPath}/summit-vancouver-bkgd.jpg') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.summit-hero-wrapper.condensed {
+    background: url('#{$assetsPath}/summit-vancouver-bkgd.jpg') no-repeat center center;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper {
+        background: url('#{$assetsPath}/summit-vancouver-bkgd.jpg') no-repeat center center;
+    }
+}
+
+.summit-hero-wrapper.austin.condensed {
+    background: url('#{$assetsPath}/austin/austin-hero1.jpg') no-repeat center center;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper.austin {
+        background: url('#{$assetsPath}/austin/austin-hero1.jpg') no-repeat center center;
+    }
+}
+
+.summit-hero-wrapper h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.summit-hero-wrapper.condensed h1,
+.summit-hero-wrapper.condensed h2 {
+    display: none;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper h1,
+    .summit-hero-wrapper h2 {
+        display: none;
+    }
+    .photo-credit {
+        display: none;
+    }
+}
+
+.summit-hero-wrapper h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.summit-hero-wrapper .landing-action {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.summit-hero-wrapper.condensed .landing-action {
+    float: right;
+    margin-top: 25px;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .landing-action {
+        float: right;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 980px) {
+    .summit-hero-wrapper.condensed .landing-action {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .landing-action {
+        display: none;
+    }
+}
+
+.summit-hero-wrapper .landing-action .register-btn-lrg {
+    width: 270px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    &.inactive {
+        width: 325px;
+        &:hover {
+            cursor: default;
+            background: #DA422F;
+        }
+    }
+}
+
+.summit-hero-wrapper.condensed .register-btn-lrg {
+    width: 130px;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .register-btn-lrg {
+        width: 130px;
+    }
+}
+
+.inner-countdown-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .inner-countdown-wrapper {
+        display: none;
+    }
+}
+
+.inner-countdown-wrapper .countdown {
+    display: table;
+    margin: 0 auto;
+}
+
+.summit-hero-wrapper.condensed .inner-countdown-wrapper {
+    top: 20px;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .inner-countdown-wrapper {
+        top: 20px;
+    }
+}
+
+.summit-hero-wrapper.condensed .inner-countdown-wrapper .countdown span {
+    display: table-cell;
+    height: 40px;
+    width: 30px;
+    border: 2px solid #eee;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.summit-hero-wrapper.condensed .inner-countdown-wrapper .countdown span:first-child {
+    border-right: 0;
+    margin-right: -4px;
+}
+
+.summit-hero-wrapper.condensed .inner-countdown-wrapper .countdown span:last-child {
+    border-left: 0;
+    margin-left: -4px;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .inner-countdown-wrapper .countdown span {
+        display: table-cell;
+        height: 40px;
+        width: 30px;
+        border: 2px solid #eee;
+        color: white;
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .summit-hero-wrapper .inner-countdown-wrapper .countdown span:first-child {
+        border-right: 0;
+        margin-right: -4px;
+    }
+
+    .summit-hero-wrapper .inner-countdown-wrapper .countdown span:last-child {
+        border-left: 0;
+        margin-left: -4px;
+    }
+}
+
+.inner-countdown-wrapper .countdown-text {
+    color: white;
+    font-size: 1em;
+}
+
+.summit-hero-wrapper.condensed .inner-countdown-wrapper .countdown-text {
+    font-size: 0.8em;
+    color: #888;
+    margin: 10px 0 0;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .inner-countdown-wrapper .countdown-text {
+        font-size: 0.8em;
+        color: #888;
+        margin: 10px 0 0;
+    }
+}
+
+.summit-hero-logo {
+    margin: 50px auto 50px;
+    width: 150px;
+}
+
+.summit-hero-wrapper.condensed .summit-hero-logo {
+    margin: 20px 0 0 100px;
+}
+
+@media (max-width: 980px) {
+    .summit-hero-wrapper.condensed .summit-hero-logo {
+        margin: 20px 0 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .summit-hero-wrapper .summit-hero-logo {
+        float: left;
+        margin: 20px 0 30px;
+    }
+}
+
+.hero-tab-wrapper {
+    margin: 100px auto 0;
+}
+
+.summit-hero-wrapper.condensed .hero-tab-wrapper {
+    margin: 30px auto 0;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper .hero-tab-wrapper {
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .landing-action {
+        margin-bottom: 50px;
+    }
+    .hero-tab-wrapper {
+        display: none;
+    }
+}
+/*End Summit Inner Layout*/
+/*Hero Tabs and Navigation*/
+
+.hero-tab-wrapper ul.nav-tabs {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-tab-wrapper .nav-tabs > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    
+    zoom: 1;
+    /* hasLayout ie7 trigger */
+    
+    margin: 0 0 0 -4px;
+    border-radius: 0;
+    a {
+        width: 100%;
+        padding: 15px 25px;
+        border-width: 0 1px 0 0;
+        border-right: 1px solid rgba(113, 204, 254, 0.2);
+        color: #eeeeee;
+        display: inline-block;
+        margin: 0;
+    }
+    > a {
+        margin-right: 0;
+        border-width: 0 1px 0 0;
+        border-radius: 0;
+    }
+    &:first-child a {
+        border-left: 1px solid rgba(113, 204, 254, 0.2);
+    }
+}
+
+.hero-tab-wrapper .nav-tabs > li.current,
+.hero-tab-wrapper .nav-tabs > li.current:hover {
+    background: white;
+}
+
+.hero-tab-wrapper .nav-tabs > li.current a,
+.hero-tab-wrapper .nav-tabs > li.current a:hover {
+    color: #2a4d67;
+    font-weight: 600;
+    border-color: white;
+    background: white;
+}
+
+.hero-tab-wrapper .nav-tabs {
+    text-align: center;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-tab-wrapper .nav-tabs > li > a:hover,
+.hero-tab-wrapper .nav-tabs > li > a:focus {
+    background: none;
+    border-color: transparent;
+    background: rgba(37, 153, 219, 0.2);
+    color: white;
+}
+
+i.collapse-nav {
+    color: #4279B0;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    display: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 980px) {
+    i.collapse-nav {
+        display: block;
+    }
+}
+/*End Hero Tabs and Navigation*/
+/*Responsive mobile menu classes*/
+
+.main-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.openNav .main-body {
+    right: 50%;
+    left: -50%;
+}
+
+.sidebar-nav {
+    background: #222831;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.openNav .sidebar-nav {
+    right: 0;
+}
+
+@media (min-width: 981px) {
+    .openNav .sidebar-nav {
+        right: -50%
+    }
+    .openNav .main-body {
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar-nav {
+        width: 70%;
+        right: -70%;
+    }
+    .openNav .main-body {
+        right: 70%;
+        left: -70%;
+    }
+}
+
+ul.sidebar-menu {
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-nav .nav-tabs {
+    border-bottom: none;
+}
+
+.sidebar-nav .nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+
+.sidebar-nav ul.sidebar-menu li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar-nav ul.sidebar-menu li a {
+    color: #72808F;
+    width: 100%;
+    display: block;
+    padding: 10px 10%;
+}
+
+.sidebar-nav ul.sidebar-menu li a:hover,
+.sidebar-nav ul.sidebar-menu li a:focus,
+.sidebar-nav ul.sidebar-menu li.current a,
+.sidebar-nav ul.sidebar-menu li.current a:hover,
+.sidebar-nav ul.sidebar-menu li.current a:focus {
+    background: #171D23;
+    text-decoration: none;
+}
+
+.sidebar-nav .register-btn-lrg {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 1em;
+    padding: 0;
+    height: 40px;
+    &.inactive:hover {
+        cursor: default;
+    }
+}
+/*End Responsive mobile menu classes*/
+/*Footer*/
+
+#push {
+    height: 300px;
+}
+
+footer {
+    background: #040508;
+    padding: 70px 0;
+    height: 300px;
+    margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+    /*    #push {
+        display: none;
+    }*/
+    
+    footer {
+        height: auto;
+    }
+}
+
+.footer-links h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-links ul {
+    margin-left: 0;
+    padding-start: 0;
+    padding: 0;
+    -webkit-padding-start: 0;
+}
+
+.footer-links ul li {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+    list-style: none;
+    margin-left: 0;
+}
+
+.social-icons {
+    width: 40px;
+    min-height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-twitter {
+    background: url('#{$assetsPath}/footer-twitter.png') no-repeat;
+}
+
+.footer-twitter:hover {
+    background: url('#{$assetsPath}/footer-twitter-hover.png') no-repeat;
+}
+
+.footer-facebook {
+    background: url('#{$assetsPath}/footer-facebook.png') no-repeat;
+}
+
+.footer-facebook:hover {
+    background: url('#{$assetsPath}/footer-facebook-hover.png') no-repeat;
+}
+
+.footer-linkedin {
+    background: url('#{$assetsPath}/footer-linkedin.png') no-repeat;
+}
+
+.footer-linkedin:hover {
+    background: url('#{$assetsPath}/footer-linkedin-hover.png') no-repeat;
+}
+
+.footer-youtube {
+    background: url('#{$assetsPath}/footer-youtube.png') no-repeat;
+}
+
+.footer-youtube:hover {
+    background: url('#{$assetsPath}/footer-youtube-hover.png') no-repeat;
+}
+
+.newsletter-form {
+    margin: 10px 0 30px;
+    width: 100%;
+}
+
+.newsletter-form label {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+}
+
+.newsletter-input {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #888;
+    border-radius: 4px;
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 15px;
+    width: 70%;
+}
+
+@media (max-width: 767px) {
+    .newsletter-input {
+        width: 70%;
+    }
+}
+
+.newsletter-input::-webkit-input-placeholder {
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.newsletter-input:-moz-placeholder {
+    /* Firefox 18- */
+    
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.newsletter-input::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.newsletter-input:-ms-input-placeholder {
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border: 2px solid #666;
+}
+
+.newsletter-btn {
+    margin-left: 1%;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid $blue;
+    border-radius: 4px;
+    color: $blue;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    width: 27%;
+}
+
+@media (max-width: 767px) {
+    .newsletter-btn {
+        width: 18%;
+        margin-left: 2%;
+        padding: 10px;
+    }
+}
+
+.newsletter-btn:hover {
+    border: 2px solid #888;
+    color: #999;
+}
+
+.fine-print {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.fine-print a {
+    color: #aaa;
+    text-decoration: underline;
+}
+
+.fine-print a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #222;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.feedback-input {
+    display: inline-block;
+    background: #222;
+    border: 2px solid #444;
+    border-radius: 4px;
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 20px;
+    width: 310px;
+}
+
+@media (max-width: 767px) {
+    .feedback-input {
+        width: 70%;
+    }
+}
+
+.feedback-input::-webkit-input-placeholder {
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.feedback-input:-moz-placeholder {
+    /* Firefox 18- */
+    
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.feedback-input::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.feedback-input:-ms-input-placeholder {
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.feedback-input:focus {
+    outline: none;
+    border: 2px solid #666;
+}
+
+.feedback-btn {
+    margin-left: 11px;
+    display: inline-block;
+    background: #222;
+    border: 2px solid #666;
+    border-radius: 4px;
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 30px;
+}
+
+@media (max-width: 767px) {
+    .feedback-btn {
+        width: 18%;
+        margin-left: 2%;
+        padding: 10px;
+    }
+}
+
+.feedback-btn:hover {
+    border: 2px solid #888;
+    color: #999;
+}
+/*End Footer*/
+/*General Inner Page Styles*/
+
+.white {
+    width: 100%;
+    padding: 90px 0;
+    background: white;
+}
+
+.light {
+    width: 100%;
+    padding: 90px 0;
+    background: $lightblue;
+}
+
+.blue {
+    width: 100%;
+    background: $blue;
+    color: white;
+    h1 {
+        color: white;
+    }
+}
+/*End General Inner Page Styles*/
+
+#registrationModal strong {
+    font-weight: 600;
+    color: #2A4E68;
+}
+
+#registrationModal img.summit-modal-logo {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+/*Photo Row*/
+
+.photo-row-wrapper {
+    width: 100%;
+    color: #eee;
+    max-height: 240px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: -30px 0 -45px;
+}
+
+.photo-container {
+    width: 4000px;
+    max-height: 240px;
+    margin-left: -30px;
+}
+
+.photo-container img {
+    margin: 0 10px 0 0;
+    max-width: 22%;
+    max-height: 240px;
+}
+/*End Photo Row*/
+/*Tokyo Specific Styles*/
+
+.summit-hero-wrapper.tokyo {
+    background: url('#{$assetsPath}/tokyo/tokyo-bkgd-lrg.jpg') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.summit-hero-wrapper.tokyo.condensed {
+    background: url('#{$assetsPath}/tokyo/tokyo-bkgd-lrg.jpg') no-repeat center center;
+}
+@media (max-width: 767px) {
+    .summit-hero-wrapper.tokyo {
+        background: url('#{$assetsPath}/tokyo/tokyo-bkgd-lrg.jpg') no-repeat center center;
+    }
+}
+
+.venue-row.tokyo {
+    padding: 140px 0;
+    text-align: center;
+    color: white;
+    background: url('#{$assetsPath}/tokyo/tokyo-venue-bkgd.jpg') no-repeat left top;
+    background-size: cover;
+    position: relative;
+}
+.venue-row.tokyo {
+    padding: 140px 0;
+    text-align: center;
+    color: white;
+    background: url('#{$assetsPath}/austin/austin-venue-bkgd.jpg') no-repeat left top;
+    background-size: cover;
+    position: relative;
+}
+
+.about-city-row.tokyo {
+    background: url('#{$assetsPath}/tokyo/tokyo-bkgd-city.jpg') no-repeat left top;
+    min-height: 610px;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 -60px;
+    text-align: center;
+    padding: 170px 0;
+    color: white;
+    position: relative;
+}
+.about-city-row.austin {
+    background: url('#{$assetsPath}/austin/austin-bottom-bkgd.jpg') no-repeat center bottom;
+    min-height: 610px;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 -60px;
+    text-align: center;
+    padding: 170px 0;
+    color: white;
+    position: relative;
+}
+
+.negative-bottom {
+    margin-bottom: -60px;
+}
+
+.top-bar {
+    background: #101D2A;
+    text-align: center;
+    padding: 20px 10px;
+    p {
+        color: $lightblue;
+        line-height: 1.5;
+        margin: 0;
+    }
+    i {
+        margin-right: 2px;
+    }
+}
+/*End Tokyo Specific Styles*/
+/*Austin Landing*/
+
+.tokyo-landing-wrapper.austin {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 70px 0;
+    background: url('#{$assetsPath}/austin/austin-bkgd-lrg.jpg') no-repeat right top;
+    background-size: cover;
+}
+.tokyo-landing-wrapper.barcelona {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 70px 0;
+    background: url('#{$assetsPath}/barcelona/barcelona-bkgd-lrg.jpg') no-repeat right top;
+    background-size: cover;
+}
+/*Tokyo Summit Landing Page*/
+
+.tokyo-landing-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 70px 0;
+    background: url('#{$assetsPath}/austin/austin-bkgd-lrg.jpg') no-repeat right top;
+    background-size: cover;
+}
+
+img.tokyo-landing-logo {
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+
+.save-the-date {
+    color: white;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.tokyo-landing-wrapper h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 8px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+a.white-link {
+    color: white;
+}
+
+.tokyo-landing-wrapper p {
+    color: white;
+}
+
+.tokyo-landing-wrapper .summit-location {
+    display: block;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.tokyo-landing-wrapper .summit-location::before {
+    content: "";
+    border-top: 1px solid #edf2f7;
+    width: 150px;
+    height: 5px;
+    position: absolute;
+    margin-right: 15px;
+    top: 50%;
+    right: 100%;
+}
+
+.tokyo-landing-wrapper .summit-location::after {
+    content: "";
+    border-top: 1px solid #edf2f7;
+    width: 150px;
+    height: 5px;
+    position: absolute;
+    margin-left: 15px;
+    top: 50%;
+    left: 100%;
+}
+
+@media (max-width: 767px) {
+    .tokyo-landing-wrapper h1 {
+        font-size: 15px;
+    }
+    .tokyo-landing-wrapper .summit-location {
+        font-size: 40px;
+    }
+    .tokyo-landing-wrapper .summit-location::before {
+        width: 75px;
+    }
+    .tokyo-landing-wrapper .summit-location::after {
+        width: 75px;
+    }
+}
+
+.summit-date {
+    background: none;
+    font-size: 25px;
+    margin-top: 30px;
+    color: white;
+}
+
+.summit-date span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.landing-social {
+    margin: 40px 0;
+}
+
+.landing-social .social-icons {
+    width: 25px;
+    min-height: 25px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.landing-twitter {
+    background: url('#{$assetsPath}/landing-twitter.png') no-repeat;
+    opacity: 0.8;
+}
+
+.landing-twitter:hover {
+    opacity: 1;
+}
+
+.landing-facebook {
+    background: url('#{$assetsPath}/landing-facebook.png') no-repeat;
+    opacity: 0.8;
+}
+
+.landing-facebook:hover {
+    opacity: 1;
+}
+
+.landing-linkedin {
+    background: url('#{$assetsPath}/landing-linkedin.png') no-repeat;
+    opacity: 0.8;
+}
+
+.landing-linkedin:hover {
+    opacity: 1;
+}
+
+.tokyo-landing-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.tokyo-landing-bottom p {
+    color: white;
+}
+
+.landing-footer {
+    position: relative;
+    left: -50%;
+}
+
+.landing-footer a {
+    width: 150px;
+    padding: 5px 0 0;
+    display: inline-block;
+    background: #cf3427;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.landing-footer a:hover {
+    background: #BD2723;
+}
+
+.landing-footer a img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+
+.tokyo-landing-wrapper a i {
+    color: #edf2f7;
+}
+
+.tokyo-landing-wrapper a i:hover {
+    color: white;
+}
+
+a.current-summit-link {
+    display: block;
+    margin-top: 20px;
+}
+/*End Austin Landing*/
