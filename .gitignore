@@ -6,6 +6,7 @@ node_modules/*
 build/*
 content/admin/*
 .users.yml
+netlify-config.js
 
 # xcode noise
 build/*

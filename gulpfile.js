@@ -1,60 +1,15 @@
-'use strict';
+/*
+  gulpfile.js
+  ===========
+  Rather than manage one giant configuration file responsible
+  for creating multiple tasks, each task has been broken out into
+  its own file in gulp/tasks. Any files in that directory get
+  automatically required below.
+  To add a new task, simply add a new task file that directory.
+  gulp/tasks/default.js specifies the default set of tasks to run
+  when you run `gulp`.
+*/
+var requireDir = require('require-dir');
 
-require("harmonize")(["harmony-generators"]);
-
-var gulp = require('gulp');
-// Loads the plugins without having to list all of them, but you need
-// to call them as $.pluginname
-var $ = require('gulp-load-plugins')();
-// BrowserSync isn't a gulp package, and needs to be loaded manually
-var browserSync = require('browser-sync');
-// define a variable that BrowserSync uses in it's function
-var bs;
-// command for reloading webpages using BrowserSync
-var reload = browserSync.reload;
-
-gulp.task('start-browserSync',['start-metalsmith'], function () {
-  bs = browserSync({
-    notify: true,
-    // tunnel: '',
-    server: {
-      baseDir: 'build'
-    }
-  });
-});
-
-gulp.task('start-metalsmith', function () {
-  var started = false;
-  return $.nodemon({
-    script: 'index.js'
-  }).on('start', function () {
-    // to avoid nodemon being started multiple times
-    // thanks @matthisk
-    if (!started) {
-      cb();
-      started = true;
-    }
-  }).on('complete', function () {
-    $.gutil.log('Hello world!');
-    browserSync.reload();
-  });
-});
-
-gulp.task('start-browserSync',['start-metalsmith'], function () {
-  bs = browserSync({
-    notify: true,
-    // tunnel: '',
-    server: {
-      baseDir: 'build'
-    }
-  });
-});
-
-// Watch content and templates to rebuild on change
-gulp.task('watch', function () {
-  gulp.watch(['build/stylesheets/*.css', 'build/javascripts/**/*.js'], reload);
-  gulp.watch(['build/**/*.html'], reload);
-});
-
-// Default task to start site and serve it
-gulp.task('default', ['start-browserSync', 'watch']);
+// Require all tasks in gulp/tasks, including subfolders
+requireDir('./tasks', { recurse: true });
